@@ -1,4 +1,4 @@
-.grid{
+.grid-container{
 display: grid;
 column-gap: 50px;
 text-algin: center;	
