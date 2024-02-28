@@ -3,21 +3,50 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css" />
-  </head>
-
-  <body>
-    <body id="grid-container">
-      <div> class="grid-item"1</div>
-      <div> class="grid-item2</div>
-      <div> class="grid-item3</div>
-      <div> class="grid-item4</div>
-      <div> class="grid-item5</div>
-      <div> class="grid-item6</div>
-      <div> class="grid-item7</div>
-      <div> class="grid-item8</div>
-      <div> class="grid-item9</div>
-      <div> class="grid-item10</div>
-    </body>
-    <script type="text/javascript" src="./script.js"></script>
+  <style>
+.item1 {grid-area: a;}
+.item2 {grid-area: b;}
+.item3 {grid-area: c;}
+	.item4 {grid-area: d;}
+	.item5 {grid-area: e;}
+	.item6 {grid-area: f;}
+	.item7 {grid-area: g;}
+	.item8 {grid-area: h;}
+	.item9 {grid-area: i;}
+	.item10 {grid-area: j;}
+	.grid-container {
+		display: grid;
+		grid-template-areas:
+		'a a a a'
+		'b c d e'
+		'b e e f'
+		'b g h i'
+		'b j j j';
+		gap: 5px;
+		background-color: green;
+		padding: 10px;
+	}
+	.grid-container > div {
+		background-color:green;
+		text-align: center;
+		padding: 20px 0;
+		font-size:20px;
+		grid-template-columns: auto auto auto;
+	}
+  </style>
+</head>
+	<body>
+	<div class="grid-container">
+		<div class="item1">1</div> 
+		<div class="item2">2</div> 
+		<div class="item3">3</div> 
+		<div class="item4">4</div> 
+		  <div class="item5">5</div> 
+		  <div class="item6">6</div> 
+		  <div class="item7">7</div> 
+		  <div class="item8">8</div> 
+		  <div class="item9">9</div> 
+		  <div class="item10">10</div> 	  
+	</div>
   </body>
 </html>
