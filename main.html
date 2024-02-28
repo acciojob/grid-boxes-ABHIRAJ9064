@@ -16,24 +16,13 @@
 	.item10 {grid-area: j;}
 	.grid-container {
 		display: grid;
-		grid-template-areas:
-		'a a a a'
-		'b c d e'
-		'b e e f'
-		'b g h i'
-		'b j j j';
+		grid-template-columns: repeat(4 1fr);
+		grid-template-rows: repeat(5 1fr);
 		gap: 5px;
 		background-color: green;
 		padding: 10px;
 	}
-	.grid-container > div {
-		background-color:green;
-		text-align: center;
-		padding: 20px 0;
-		font-size:20px;
-		grid-template-columns: auto auto auto;
-	}
-  </style>
+	</style>
 </head>
 	<body>
 	<div class="grid-container">
